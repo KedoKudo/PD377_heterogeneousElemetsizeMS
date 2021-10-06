@@ -2,7 +2,7 @@
 
 # ----- Project Macro ----- #
 UnitTestCategory := AllTests
-UnitTestName := MyAlgorithmTest
+UnitTestName := MultipleScatteringCorrectionTest
 TestScript := test.py
 
 # ------------------------------------------------------ #
@@ -17,7 +17,7 @@ MANTIDDIR := $(mkfile_top)/mantid
 BUILDDIR  := $(mkfile_top)/build
 INTALLDIR := $(mkfile_top)/opt/mantid
 HOSTNAME  := $(shell hostname)
-BASEOPTS  := -GNinja -DDOCS_PLOTDIRECTIVE=ON -DCMAKE_INSTALL_PREFIX=$(INTALLDIR) -DCMAKE_BUILD_TYPE=RelWithDebInfo
+BASEOPTS  := -GNinja -DDOCS_PLOTDIRECTIVE=ON -DCMAKE_INSTALL_PREFIX=$(INTALLDIR) -DCMAKE_BUILD_TYPE=Debug
 
 # ----- GDB -----
 TestExecutable := $(BUILDDIR)/bin/AlgorithmsTest
