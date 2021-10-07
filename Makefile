@@ -17,7 +17,7 @@ MANTIDDIR := $(mkfile_top)/mantid
 BUILDDIR  := $(mkfile_top)/build
 INTALLDIR := $(mkfile_top)/opt/mantid
 HOSTNAME  := $(shell hostname)
-BASEOPTS  := -GNinja -DDOCS_PLOTDIRECTIVE=ON -DCMAKE_INSTALL_PREFIX=$(INTALLDIR) -DCMAKE_BUILD_TYPE=Debug
+BASEOPTS  := -GNinja -DDOCS_PLOTDIRECTIVE=ON -DCMAKE_INSTALL_PREFIX=$(INTALLDIR) -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 # ----- GDB -----
 TestExecutable := $(BUILDDIR)/bin/AlgorithmsTest
