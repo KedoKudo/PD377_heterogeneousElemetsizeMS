@@ -2,7 +2,7 @@
 
 # ----- Project Macro ----- #
 UnitTestCategory := AllTests
-UnitTestName := MultipleScatteringCorrectionTest
+UnitTestName := PaalmanPingsAbsorptionCorrectionTest
 TestScript := test.py
 
 # ------------------------------------------------------ #
